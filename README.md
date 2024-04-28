@@ -3,6 +3,8 @@
 
 ScatteredMASKED is a Python script that generates visually stunning scattered images by combining a mask image and a set of input images. Each scattered image is unique and visually appealing, making it perfect for creating artistic effects or enhancing design projects.
 
+- THIS CODE IS MEANT TO BE USED WITH SPRITE SIZED IMAGES (EMOJIS, VIDEO GAME SPRITES, SMALL IMAGES)
+
 ## Features
 
 - **Random Scatter**: The script randomly scatters portions of input images across a mask image, creating a natural and dynamic effect.
