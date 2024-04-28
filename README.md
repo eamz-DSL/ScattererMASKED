@@ -19,27 +19,27 @@ ScatteredMASKED is a Python script that generates visually stunning scattered im
    
 ## Example
 
-- **Input Images:
+- Input Images:
 
-- **Mask Image:
+- Mask Image:
 
-- **Scattered Output:
+- *cattered Output:
 
 ## Customization
 Input Images:
 Add or remove input images in the input_images folder.
 
-- **Supported formats: JPEG, PNG, GIF.
-- 
+- Supported formats: JPEG, PNG, GIF.
+ 
 ## Mask Image:
 
-- **Replace mask.png with your own mask image in the root directory.
-- **The mask image defines the shape and boundaries of the scattered images.
-- 
+- Replace mask.png with your own mask image in the root directory.
+- The mask image defines the shape and boundaries of the scattered images.
+ 
 ## Parameters:
 
-- **Adjust parameters such as density, size, rotation, color, and transparency in the script to customize the appearance of scattered images.
+- Adjust parameters such as density, size, rotation, color, and transparency in the script to customize the appearance of scattered images.
 
 ## Acknowledgments
 
-- **This project utilizes the Pillow library for image processing.
+- This project utilizes the Pillow library for image processing.
