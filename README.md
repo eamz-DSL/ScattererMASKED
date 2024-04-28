@@ -17,30 +17,29 @@ ScatteredMASKED is a Python script that generates visually stunning scattered im
    ```bash
    pip install Pillow
    
-Prepare Input Images:
-Place your input images in the input_images folder.
-Ensure you have a mask image named mask.png in the root directory of the repository.
-Run the Script:
-bash
-Copy code
-python scatter_images.py
-Follow Prompts:
-Enter the number of scattered images to generate.
-The scattered images will be saved in a folder named scattered_images.
-Example
-Input Images:
-Mask Image:
-Scattered Output:
-Customization
+## Example
+
+- **Input Images:
+
+- **Mask Image:
+
+- **Scattered Output:
+
+## Customization
 Input Images:
 Add or remove input images in the input_images folder.
-Supported formats: JPEG, PNG, GIF.
-Mask Image:
-Replace mask.png with your own mask image in the root directory.
-The mask image defines the shape and boundaries of the scattered images.
-Parameters:
-Adjust parameters such as density, size, rotation, color, and transparency in the script to customize the appearance of scattered images.
-Acknowledgments
-This project utilizes the Pillow library for image processing.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+- **Supported formats: JPEG, PNG, GIF.
+- 
+## Mask Image:
+
+- **Replace mask.png with your own mask image in the root directory.
+- **The mask image defines the shape and boundaries of the scattered images.
+- 
+## Parameters:
+
+- **Adjust parameters such as density, size, rotation, color, and transparency in the script to customize the appearance of scattered images.
+
+## Acknowledgments
+
+- **This project utilizes the Pillow library for image processing.
