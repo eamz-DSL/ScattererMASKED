@@ -21,9 +21,8 @@ def scatter_images(input_folder, mask_path, output_folder, num_images_to_generat
 
         # Adjust density based on the number of assets used
         density = 100
-
-        # Select random image files for this scatter generation
-        selected_files = random.sample(image_files, num_images_used)
+        # Select random image files for this scatter generation, excluding "mask.png"
+        selected_files = random.sample([f for f in image_files if f != "mask.png"], num_images_used)
 
         # Create a new canvas for each scattered image
         canvas = Image.new("RGBA", mask.size, (0, 0, 0, 0))
@@ -39,14 +38,15 @@ def scatter_images(input_folder, mask_path, output_folder, num_images_to_generat
 
             # Paste images randomly on canvas
             for _ in range(repetitions):
-                x_offset = random.randint(0, mask_width - image.width)
-                y_offset = random.randint(0, mask_height - image.height)
+                # Calculate offsets, allowing for images to be placed partially outside mask boundaries
+                x_offset = random.randint(-image.width, mask_width)
+                y_offset = random.randint(-image.height, mask_height)
 
                 # Create a copy of the image
                 image_copy = image.copy()
 
                 # Randomize image size
-                random_size = random.uniform(0.2, 5)
+                random_size = random.uniform(0.2, 7)
                 new_size = (int(image_copy.width * random_size), int(image_copy.height * random_size))
                 image_copy = image_copy.resize(new_size, Image.LANCZOS)
 
